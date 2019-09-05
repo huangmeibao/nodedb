@@ -35,14 +35,22 @@ node.js database    最简单的数据库， 免安装，只需插件引用，�
 
 三 使用说明
    1 插入数据 
- 
+   
        // insert data
        let result = nodedb.execute.insert('user',{userName:'yaguan2',password:'123425'})
+
        
-   2 查询数据 fields:查询过滤  where：查询条件 (支持正则)  limit: 数据截取 sort：排序 paging： 支持分页
+   2 查询数据 
+      
    
-        // select data
-        let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1,paging:{pageSize:2,page:0}})
+     // select data
+    let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1,paging:{pageSize:2,page:0}})
+        
+    // fields:查询过滤 
+    // where：查询条件 (支持正则) 
+    // limit: 数据截取
+    // sort：排序 
+    // paging： 支持分页
         
    3 更新数据 
    
