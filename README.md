@@ -25,11 +25,13 @@ node.js database    最简单的数据库， 免安装，只需插件引用，�
    
    4  创建表  以创建一个 user 表为列子
    
-      在对应的数据库文件夹下创建user.json   (/data/db/user.json)
-      填充内容：
+   在对应的数据库文件夹下创建user.json   (/data/db/user.json)
+   填充内容：
+      
             {"autoId":0,"fields":{"id":"autoId","userName":"string","password":"string"}}
-      autoId : 参数为表自增id初始值 
-      fields ：参数为表中字段及字段的类型 类型支持 javascript 所有类型
+            
+   autoId : 参数为表自增id初始值 
+   fields ：参数为表中字段及字段的类型 类型支持 javascript 所有类型
 
 三 使用说明
    1 插入数据 
