@@ -1,11 +1,12 @@
 {
-  "name": "nodedb",
-  "version": "1.0.0",
+  "name": "node-edb",
+  "version": "1.0.1",
   "description": "node.js database",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "private":false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huangmeibao/nodedb.git"

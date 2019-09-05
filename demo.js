@@ -7,7 +7,7 @@ nodedb.init(baseUrl,'db')
 // let result = nodedb.execute.insert('user',{userName:'yaguan2',password:'123425'})
 
 // select data
-// let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1,paging:{pageSize:2,page:0}})
+ let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1,paging:{pageSize:2,page:0}})
 // let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1})
 
 
@@ -16,6 +16,6 @@ nodedb.init(baseUrl,'db')
 
 
 // delete data
-let result = nodedb.execute.remove('user',{where:{userName:'yaguan2'}})
+//let result = nodedb.execute.remove('user',{where:{userName:'yaguan2'}})
 
 console.log(result)
