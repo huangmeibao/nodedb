@@ -26,10 +26,10 @@ node.js database 最简单的数据库， 免安装，只需插件引用，不�
 
 在对应的数据库文件夹下创建 user.json (/data/db/user.json)
 填充内容：
-  
- {"autoId":0,"fields":{"id":"autoId","userName":"string","password":"string"}}
-  
- autoId : 参数为表自增 id 初始值
+
+{"autoId":0,"fields":{"id":"autoId","userName":"string","password":"string"}}
+
+autoId : 参数为表自增 id 初始值
 fields ：参数为表中字段及字段的类型 类型支持 javascript 所有类型
 
 注意点： user.json 为表结构 数据容器为 user.nb (此文件在 nodedb 第一次初始化的时候自动创建 )
@@ -40,20 +40,17 @@ fields ：参数为表中字段及字段的类型 类型支持 javascript 所有
        // insert data
        let result = nodedb.execute.insert('user',{userName:'yaguan2',password:'123425'})
 
-
 2 查询数据 fields:查询过滤 where：查询条件 (支持正则) limit: 数据截取 sort：排序 paging： 支持分页
 
         // select data
         let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1,paging:{pageSize:2,page:0}})
-
 
 3 更新数据
 
         // update data
         let result = nodedb.execute.update('user',{userName:'yaguan',password:'123425'},{where:{userName:'yaguan2'}})
 
-
 4 删除数据
-  
- // delete data
-let result = nodedb.execute.remove('user',{where:{userName:'yaguan2'}})
+
+       // delete data
+       let result = nodedb.execute.remove('user',{where:{userName:'yaguan2'}})
