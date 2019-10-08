@@ -4,18 +4,30 @@
   "description": "node.js database",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "node demo.js",
+    "nql": "node nql.js"
   },
-  "private":false,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huangmeibao/nodedb.git"
   },
-  "keywords": ["node.js database","Simple database","nodedb","Easy to store"],
+  "keywords": [
+    "node.js database",
+    "Simple database",
+    "nodedb",
+    "Easy to store"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/huangmeibao/nodedb/issues"
   },
-  "homepage": "https://github.com/huangmeibao/nodedb#readme"
+  "homepage": "https://github.com/huangmeibao/nodedb#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.0"
+  }
 }
