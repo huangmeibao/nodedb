@@ -8,19 +8,19 @@ nodedb.init (baseUrl, 'db');
 
 // select data
 
-// let result = nodedb.execute.select ('usersys', {
-//   fields: ['id', 'userName'],
-//   where: {userName: 'yaguan', password: 'RegExp(/2/)'},
-//   limit: [0, 10],
-//   sort: -1,
-//   paging: {pageSize: 2, page: 0},
-// });
+let result = nodedb.execute.select ('user', {
+  fields: ['id'],
+  where: {userName: 'yaguan', password: '4444'},
+  limit: [0, 10],
+  sort: -1,
+  paging: {pageSize: 2, page: 0},
+});
 // let result = nodedb.execute.select('user',{fields:['id','userName'],where:{userName:'yaguan',password:'RegExp(/2/)'},limit:[0,10],sort:-1})
 
 // update data
 //let result = nodedb.execute.update('user',{userName:'yaguan',password:'123425'},{where:{userName:'yaguan2'}})
 
 // delete data
-let result = nodedb.execute.remove ('user', {where: {userName: 'yaguan2'}});
+// let result = nodedb.execute.remove ('user', {where: {userName: 'yaguan2'}});
 
 console.log (result);

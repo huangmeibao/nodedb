@@ -32,7 +32,7 @@ node.js database 最简单的数据库， 免安装，只需插件引用，不�
 autoId : 参数为表自增 id 初始值
 fields ：参数为表中字段及字段的类型 类型支持 javascript 所有类型
 
-注意点： user.json 为表结构 数据容器为 user.nb (此文件在 nodedb 第一次初始化的时候自动创建 )
+注意点： user.json 为表结构 数据容器文件为 user.nb (此文件在 nodedb 第一次初始化的时候自动创建,也可以手动创建空文件)
 
 三 使用说明
 1 插入数据
